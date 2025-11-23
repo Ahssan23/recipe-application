@@ -1,0 +1,82 @@
+/* LoginPage.css */
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff8a00, #ff5722);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #ff5722;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #ff5722;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: #e64a19;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
