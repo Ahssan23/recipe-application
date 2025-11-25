@@ -4,12 +4,16 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+<<<<<<< HEAD
   background: #fff8f0; /* full-page light orange */
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+=======
+  background: #fff8f0;
+>>>>>>> 1b1efe1 (initial commit)
 }
 
 /* ====== HOMEPAGE ====== */
@@ -41,11 +45,16 @@ html, body {
   color: #ff5722;
 }
 
+/* ====== NAVIGATION ====== */
 .header nav {
   display: flex;
   align-items: center;
   gap: 15px;
+<<<<<<< HEAD
   flex-wrap: wrap; /* wrap nav items */
+=======
+  transition: max-height 0.3s ease;
+>>>>>>> 1b1efe1 (initial commit)
 }
 
 .header nav a {
@@ -73,9 +82,38 @@ html, body {
   background: #e64a19;
 }
 
+/* ====== HAMBURGER MENU ====== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s;
+}
+
+/* Mobile nav open state */
+.header nav.open {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-top: 1px solid #eee;
+}
+
 /* ====== HERO SECTION ====== */
 .hero {
-  min-height: 100vh; /* full viewport height */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,15 +184,23 @@ html, body {
 
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 15px 20px;
   }
 
   .header nav {
+<<<<<<< HEAD
     width: 100%;
     justify-content: space-between;
     margin-top: 10px;
+=======
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+>>>>>>> 1b1efe1 (initial commit)
   }
 
   .hero h1 {

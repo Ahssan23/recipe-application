@@ -7,7 +7,11 @@ import { Recipe } from "../models/recipe.js";
 const router = express.Router();
 
 
+<<<<<<< HEAD
 const getRecipe = router.get("/api/GetRecipe" ,async (req,res)=>{
+=======
+const getRecipe = router.get("/api/getRecipe" ,async (req,res)=>{
+>>>>>>> 1b1efe1 (initial commit)
     try{
 
         const recipe = await Recipe.find();
@@ -20,7 +24,11 @@ const getRecipe = router.get("/api/GetRecipe" ,async (req,res)=>{
 });
 
 
+<<<<<<< HEAD
 const getRecipeId = router.get("/api/GetrecipeId", async (req,res)=>{
+=======
+const getRecipeId = router.get("/api/getRecipeId", async (req,res)=>{
+>>>>>>> 1b1efe1 (initial commit)
     const id = req.query.id;
     const findRecipe = await Recipe.findById(id);
     return res.json({success:true, data:findRecipe})
@@ -43,10 +51,18 @@ const updateRecipe = router.put("/api/updateRecipe/:id", async (req,res)=>{
     try{
         const {id} =req.params;
         const updateData = req.body;
+<<<<<<< HEAD
 
         const updateRecipe = await Recipe.findByIdAndUpdate(id, updateData, {new:true})
         if (!updateRecipe) return res.status(404).json({ success: false, message: "Recipe not found" });
         res.json({ success: true, data: updatedRecipe });
+=======
+        
+
+        const updateRecipe = await Recipe.findByIdAndUpdate(id, updateData, {new:true})
+        if (!updateRecipe) return res.status(404).json({ success: false, message: "Recipe not found" });
+        res.json({ success: true, data: updateRecipe });
+>>>>>>> 1b1efe1 (initial commit)
     } catch (err) {
         console.error("Error updating recipe:", err);
         res.status(500).json({ success: false, message: "Server error" });

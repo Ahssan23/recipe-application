@@ -14,7 +14,11 @@ const LoginPage = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/auth/login", { email, password });
+      const res = await axios.post(
+  "http://localhost:5000/auth/login",
+  { email, password },
+  { withCredentials: true }
+);
       login(res.data.token, res.data.role, res.data.name);
       navigate("/"); // Redirect to homepage
     } catch (err) {

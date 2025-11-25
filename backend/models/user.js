@@ -8,4 +8,6 @@ const UserSchema = new mongoose.Schema({
   history: { type: Array, default: [] }
 }, { timestamps: true });
 
+
+
 export default mongoose.model("User", UserSchema);

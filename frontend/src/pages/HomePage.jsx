@@ -17,11 +17,8 @@ const HomePage = () => {
 
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
           <a href="#">Home</a>
-          <a href="#">Browse Recipes</a>
-          <a href="#">Submit Recipes</a>
-          <a href="#">Categories</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact Us</a>
+          <a href="/recipes">Browse Recipes</a>
+          <a href="/recipes/create">Submit Recipes</a>
 
           {user ? (
             <>
