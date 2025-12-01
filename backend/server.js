@@ -7,7 +7,7 @@ import authRoute from "./routes/auth.js";
 import userRoute from "./routes/user.js";
 import recipeRoute from "./routes/recipe.js";
 
-import recipeRoutes from "./routes/getRecipe.js";
+import GetrecipeRoutes from "./routes/getRecipe.js";
 import cookieParser from "cookie-parser";
 
 dotenv.config();
@@ -28,7 +28,7 @@ app.use("/user", userRoute);
 
 app.use("/recipe", recipeRoutes);
 // Base recipe routes (list, create, etc)
-app.use("/recipe", recipeRoute);
+app.use("/recipe", GetrecipeRoute);
 
 
 // DB connect
