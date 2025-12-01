@@ -47,8 +47,8 @@
       // Set cookie with token + email
       res.cookie("auth", JSON.stringify({ token, email }), {
         httpOnly: true,   // JS can't read it
-        secure: false,    // true if HTTPS
-        sameSite: "lax",  // adjust if frontend on different domain
+        secure: true,    // true if HTTPS
+        sameSite: "none",  // adjust if frontend on different domain
         maxAge: 24 * 60 * 60 * 1000 // 1 day
       });
 
