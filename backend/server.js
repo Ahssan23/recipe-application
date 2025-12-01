@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use("/auth", authRoute);
 app.use("/user", userRoute);
 
-app.use("/recipe", recipeRoutes);
+app.use("/recipe", recipeRoute);
 // Base recipe routes (list, create, etc)
 app.use("/recipe", GetrecipeRoutes);
 
