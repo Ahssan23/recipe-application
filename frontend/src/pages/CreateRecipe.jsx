@@ -8,7 +8,7 @@ export default function CreateRecipe() {
   const handleSubmit = async (formData) => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/recipe/api/addRecipe",
+        `${import.meta.env.VITE_API_URL}recipe/api/addRecipe`,
         formData,
         { withCredentials: true }
       );
