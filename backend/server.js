@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: "https://recipe-application-fty4.onrender.com/",
+  origin: "https://recipe-application-3.onrender.com",
   credentials: true
 }));
 app.use(express.json());
