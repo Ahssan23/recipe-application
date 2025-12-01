@@ -28,7 +28,7 @@ app.use("/user", userRoute);
 
 app.use("/recipe", recipeRoutes);
 // Base recipe routes (list, create, etc)
-app.use("/recipe", GetrecipeRoute);
+app.use("/recipe", GetrecipeRoutes);
 
 
 // DB connect
